@@ -34,7 +34,6 @@ def get_all_file_paths(directory):
 #         if file.endswith(".py"):
 #             files.extract(file, path=path_to_extract_to)
 
-# @Gooey
 # def main():
 #     path_of_zip_file = input("Enter path of the zip file > ")
 #     path_to_extract_to = input("Enter the path you want to extract to > ")
