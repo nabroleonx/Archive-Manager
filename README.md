@@ -1,6 +1,6 @@
 # Archive-Manager
 
-This is a simple archive manager with an easy to use gui that will let you extract and compress `.zip` files. 
+This is a **simple archive manager** with an easy to use gui that will let you extract and compress `.zip` files. 
 _You won't need third party archiving tool like **winrar** or **7zip** to extract zip files.
 The GUI is made with the Gooey python module._
 
