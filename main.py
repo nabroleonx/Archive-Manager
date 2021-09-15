@@ -20,8 +20,8 @@ def parse_args():
     extractor = subparsers.add_parser("Extract", help="Extract zip files")
     compressor = subparsers.add_parser("Compress", help="Compress to zip files")
 
-    extractor.add_argument('input_file', widget="FileChooser", help="Choose the file to extract")
-    compressor.add_argument('input_folder', widget="DirChooser", help="Choose the file to Compress")
+    extractor.add_argument('input_file', widget="FileChooser", help="Choose the file you want to extract")
+    compressor.add_argument('input_folder', widget="DirChooser", help="Choose the file you want to Compress")
 
     extractor.add_argument('output_folder', widget="DirChooser",
                            help="Extracted file location")
