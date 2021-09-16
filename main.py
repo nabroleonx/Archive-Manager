@@ -16,7 +16,7 @@ def parse_args():
     extractor.add_argument('output_folder', widget="DirChooser", help="Extracted file location")
     compressor.add_argument('output_file', widget="FileSaver", help="Compressed file location")
 
-    extractor.add_argument('--password', default=None, help="If you are working with encrypted file, enter the password below")
+    extractor.add_argument('--password', default=None, help="If you are working with encrypted file, enter the password below.")
 
     return parser.parse_args()
 
@@ -34,8 +34,7 @@ def main():
             abs_path = os.path.abspath(args.input_folder)
             for root, directories, files in os.walk(args.input_folder):
                 for filename in files:
-                    abs_file_name = os.path.abspath(
-                        os.path.join(root, filename))
+                    abs_file_name = os.path.abspath(os.path.join(root, filename))
                     arcname = abs_file_name[len(abs_path) + 1:]
                     zipped.write(abs_file_name, arcname)
 
